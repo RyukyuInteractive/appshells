@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title>Hello</title>
-  <script src='dist/app.js'></script>
+  <script src='out.js'></script>
   <script>
     const data = {
       menu: [
@@ -18,10 +18,9 @@
 <app-shell></app-shell>
 
 <script>
-  const app = new App({
-    target: document.querySelector('app-shell'),
-    data: {
-      menu: data.menu
-    }
-  })
+  {
+    const appShell = document.querySelector('app-shell')
+
+    const app = new App({target: appShell, data})
+  }
 </script>

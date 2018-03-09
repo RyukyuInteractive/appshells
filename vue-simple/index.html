@@ -24,10 +24,9 @@
 </app-shell>
 
 <script>
-  const vue = new Vue({
-    el: document.querySelector('app-shell'),
-    data: {
-      menu: data.menu
-    }
-  })
+  {
+    const appShell = document.querySelector('app-shell')
+
+    const app = new Vue({el: appShell, data})
+  }
 </script>
