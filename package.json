@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "svelt-simple": "svelte compile --format iife ./svelt-simple/App.html > ./svelt-simple/out.js",
-    "react-simple": "babel --babelrc react-simple/.babelrc  react-simple/app.js -o react-simple/out.js"
+    "svelte:build": "svelte compile --format iife ./svelte/App.html > ./svelte/out.js",
+    "react:build": "babel --babelrc react/.babelrc  react/app.js -o react/out.js"
   },
   "dependencies": {
     "svelte-cli": "^2.2.0"
