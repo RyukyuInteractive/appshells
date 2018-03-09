@@ -10,7 +10,11 @@
     "svelte-cli": "^2.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
     "babel-eslint": "^8.2.2",
+    "babel-plugin-inferno": "^4.0.0",
     "standard": "^11.0.0"
   },
   "standard": {
