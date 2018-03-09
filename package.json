@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "svelt-simple": "svelte compile --format iife ./svelt-simple/src/App.html > ./svelt-simple/dist/app.js"
+  },
   "dependencies": {
     "svelte-cli": "^2.2.0"
   },

@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <title>Hello</title>
-  <script src='https://unpkg.com/vue/dist/vue.min.js'></script>
+  <script src='dist/app.js'></script>
   <script>
     const data = {
       menu: [
@@ -15,17 +15,11 @@
   </script>
 </head>
 
-<app-shell>
-  <ul>
-    <li v-for='item in menu'>
-      {{item.name}}
-    </li>
-  </ul>
-</app-shell>
+<app-shell></app-shell>
 
 <script>
-  const vue = new Vue({
-    el: document.querySelector('app-shell'),
+  const app = new App({
+    target: document.querySelector('app-shell'),
     data: {
       menu: data.menu
     }
