@@ -6,7 +6,8 @@
   "scripts": {
     "svelte:build": "svelte compile --format iife ./svelte/App.html > ./svelte/out.js",
     "react:build": "babel --babelrc react/.babelrc  react/app.js -o react/out.js",
-    "inferno:build": "babel --babelrc inferno/.babelrc  inferno/app.js -o inferno/out.js"
+    "inferno:build": "babel --babelrc inferno/.babelrc  inferno/app.js -o inferno/out.js",
+    "preact:build": "babel --babelrc preact/.babelrc  preact/app.js -o preact/out.js"
   },
   "dependencies": {
     "svelte-cli": "^2.2.0"
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
     "@babel/preset-env": "^7.0.0-beta.40",
     "@babel/preset-react": "^7.0.0-beta.40",
     "babel-eslint": "^8.2.2",

@@ -1,0 +1,27 @@
+<!doctype html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Hello</title>
+  <script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
+  <script src='out.js'></script>
+  <script>
+    const data = {
+      menu: [
+        {name: 'item 0'},
+        {name: 'item 1'},
+        {name: 'item 2'}
+      ]
+    }
+  </script>
+</head>
+
+<app-shell></app-shell>
+
+<script>
+  {
+    const appShell = document.querySelector('app-shell')
+
+    preact.render(App(data), appShell)
+  }
+</script>
