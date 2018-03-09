@@ -2,5 +2,20 @@
   "name": "appshells",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "svelte-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "standard": "^11.0.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": [
+      "node"
+    ],
+    "plugins": [],
+    "ignore": []
+  }
 }
