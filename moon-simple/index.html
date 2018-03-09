@@ -1,0 +1,33 @@
+<!doctype html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Hello</title>
+  <script src="https://unpkg.com/moonjs"></script>
+  <script>
+    const data = {
+      menu: [
+        {name: 'item 0'},
+        {name: 'item 1'},
+        {name: 'item 2'}
+      ]
+    }
+  </script>
+</head>
+
+<app-shell>
+  <ul>
+    <li m-for='item in menu'>
+      {{item.name}}
+    </li>
+  </ul>
+</app-shell>
+
+<script>
+  const app = new Moon({
+    el: "app-shell",
+    data: {
+      menu: data.menu
+    }
+  });
+</script>
