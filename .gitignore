@@ -1,5 +1,5 @@
 # Project
-dist
+out.js
 
 # Yarn
 yarn-error.log
